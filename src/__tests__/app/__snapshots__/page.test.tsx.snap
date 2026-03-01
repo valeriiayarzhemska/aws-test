@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page Rendering should match snapshot 1`] = `
+<div>
+  <div
+    class="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black"
+  >
+    <main
+      class="flex flex-col gap-4 min-h-screen w-full max-w-3xl flex-col items-center py-32 px-16 bg-white dark:bg-black sm:items-start"
+    >
+      <a
+        href="/openai"
+      >
+        openai
+      </a>
+      <a
+        href="/gpt4all"
+      >
+        gpt4all
+      </a>
+    </main>
+  </div>
+</div>
+`;
