@@ -18,7 +18,7 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - npm ci
-      
+
   pre_build:
     commands:
       - echo "Running pre-build commands..."
@@ -28,12 +28,12 @@ phases:
       - npm --version
       # Optional: Run tests
       # - npm run test
-      
+
   build:
     commands:
       - echo "Building Next.js application..."
       - npm run build
-      
+
   post_build:
     commands:
       - echo "Build completed successfully!"
