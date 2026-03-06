@@ -39,6 +39,10 @@ phases:
       - echo "Build completed successfully!"
       - echo "Listing out directory..."
       - ls -la out/
+      - echo "Deploying to S3..."
+      - aws s3 sync out/ s3://nextjs-app-hosting/ --delete --region us-east-1
+      - echo "Invalidating CloudFront cache..."
+      - aws cloudfront create-invalidation --distribution-id EIVN55CPBU4VU --paths "/*" --region us-east-1
 
 artifacts:
   files:
