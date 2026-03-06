@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import type { CreateTodoDto, PaginatedTodos } from '@/types/todo';
 import { todoStore } from '@/lib/todoStore';
 
+export const dynamic = 'force-static';
+
 // Simulate network delay for realistic demo
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 

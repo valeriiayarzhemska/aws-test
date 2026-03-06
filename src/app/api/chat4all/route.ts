@@ -1,5 +1,7 @@
 import { spawn } from 'child_process';
 
+export const dynamic = 'force-static';
+
 export async function POST(req: Request) {
   try {
     const data = await req.json();
